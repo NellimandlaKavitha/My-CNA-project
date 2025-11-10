@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-11-07T17:38:02 IST" name="Default suite" finished-at="2025-11-07T17:38:26 IST" duration-ms="23614">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.testrunner@4722ef0c]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-11-07T17:38:02 IST" name="Default test" finished-at="2025-11-07T17:38:26 IST" duration-ms="23614">
+      <class name="TestRunner.testrunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:TestRunner.testrunner@4722ef0c]" started-at="2025-11-07T17:38:02 IST" name="setUpClass" finished-at="2025-11-07T17:38:03 IST" duration-ms="1060" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@550de6b8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.testrunner@4722ef0c]" started-at="2025-11-07T17:38:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-07T17:38:26 IST" duration-ms="22457" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Successful New Account Creation and Profile Setup"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User Signup Flow on MeConnect"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner.testrunner@4722ef0c]" started-at="2025-11-07T17:38:26 IST" name="tearDownClass" finished-at="2025-11-07T17:38:26 IST" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- TestRunner.testrunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
