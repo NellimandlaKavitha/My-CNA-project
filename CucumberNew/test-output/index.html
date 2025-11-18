@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\IFOCUS\AppData\Local\Temp\testng-eclipse--121343415\testng-customsuite.xml</span>
+                    <span>C:\Users\IFOCUS\AppData\Local\Temp\testng-eclipse-441950666\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">5 methods, 2 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="TestRunner.testrunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login using different user credentials&quot;, &quot;Login with multiple users&quot;)">runScenario("Login using different user credentials", "Login with multiple users")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="TestRunner.testrunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login using different user credentials&quot;, &quot;Login with multiple users&quot;)">runScenario("Login using different user credentials", "Login with multiple users")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +122,17 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="TestRunner.testrunner" class="method navigator-link" hash-for-method="runScenario(&quot;Successful New Account Creation and Profile Setup&quot;, &quot;User Signup Flow on MeConnect&quot;)">runScenario("Successful New Account Creation and Profile Setup", "User Signup Flow on MeConnect")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="TestRunner.testrunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login using different user credentials&quot;, &quot;Login with multiple users&quot;)">runScenario("Login using different user credentials", "Login with multiple users")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="TestRunner.testrunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login using different user credentials&quot;, &quot;Login with multiple users&quot;)">runScenario("Login using different user credentials", "Login with multiple users")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="TestRunner.testrunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login using different user credentials&quot;, &quot;Login with multiple users&quot;)">runScenario("Login using different user credentials", "Login with multiple users")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -118,6 +147,58 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">TestRunner.testrunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login using different user credentials&quot;, &quot;Login with multiple users&quot;)">
+                  </a> <!-- runScenario("Login using different user credentials", "Login with multiple users") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login using different user credentials","Login with multiple users")</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //*[normalize-space(text())=&apos;Sign In&apos;] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.135, chrome: {chromedriverVersion: 142.0.7444.162 (c076baf266c..., userDataDir: C:\Users\IFOCUS\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55982}, goog:processID: 20260, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55982/devtoo..., se:cdpVersion: 142.0.7444.135, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 327b58c237f20d6dfbba9120f2f16bac
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at Steps.multiloginsteps.click_on_signin(multiloginsteps.java:31)
+	at ✽.User clicks login &quot;Sign In&quot; button(file:///C:/Users/IFOCUS/gitrepo/CucumberNew/src/test/resources/Features/multilogins.feature:6)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login using different user credentials&quot;, &quot;Login with multiple users&quot;)">
+                  </a> <!-- runScenario("Login using different user credentials", "Login with multiple users") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login using different user credentials","Login with multiple users")</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //*[normalize-space(text())=&apos;Sign In&apos;] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.135, chrome: {chromedriverVersion: 142.0.7444.162 (c076baf266c..., userDataDir: C:\Users\IFOCUS\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55063}, goog:processID: 16320, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55063/devtoo..., se:cdpVersion: 142.0.7444.135, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3a17cba960cad4785cf2aa8fc910d6d5
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at Steps.multiloginsteps.click_on_signin(multiloginsteps.java:31)
+	at ✽.User clicks login &quot;Sign In&quot; button(file:///C:/Users/IFOCUS/gitrepo/CucumberNew/src/test/resources/Features/multilogins.feature:6)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -126,10 +207,30 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Successful New Account Creation and Profile Setup&quot;, &quot;User Signup Flow on MeConnect&quot;)">
-                  </a> <!-- runScenario("Successful New Account Creation and Profile Setup", "User Signup Flow on MeConnect") -->
+                  <a name="runScenario(&quot;Login using different user credentials&quot;, &quot;Login with multiple users&quot;)">
+                  </a> <!-- runScenario("Login using different user credentials", "Login with multiple users") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Successful New Account Creation and Profile Setup","User Signup Flow on MeConnect")</span>
+                  <span class="parameters">("Login using different user credentials","Login with multiple users")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login using different user credentials&quot;, &quot;Login with multiple users&quot;)">
+                  </a> <!-- runScenario("Login using different user credentials", "Login with multiple users") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login using different user credentials","Login with multiple users")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login using different user credentials&quot;, &quot;Login with multiple users&quot;)">
+                  </a> <!-- runScenario("Login using different user credentials", "Login with multiple users") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login using different user credentials","Login with multiple users")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -139,7 +240,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\IFOCUS\AppData\Local\Temp\testng-eclipse--121343415\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\IFOCUS\AppData\Local\Temp\testng-eclipse-441950666\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -196,16 +297,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'TestRunner.testrunner')
-data.setCell(0, 3, 22457);
+data.setCell(0, 3, 117189);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'TestRunner.testrunner')
+data.setCell(1, 3, 86550);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'TestRunner.testrunner')
+data.setCell(2, 3, 76778);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'TestRunner.testrunner')
+data.setCell(3, 3, 75120);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'TestRunner.testrunner')
+data.setCell(4, 3, 63063);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 22 seconds</span>
+              <span class="suite-total-time">Total running time: 6 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -233,16 +350,36 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">TestRunner.testrunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@550de6b8)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@6136e1fc)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">runScenario("Successful New Account Creation and Profile Setup", "User Signup Flow on MeConnect")</span>
-                <span class="method-start">1077 ms</span>
+                <span class="method-name">runScenario("Login using different user credentials", "Login with multiple users")</span>
+                <span class="method-start">2689 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Login using different user credentials", "Login with multiple users")</span>
+                <span class="method-start">89259 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Login using different user credentials", "Login with multiple users")</span>
+                <span class="method-start">206459 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Login using different user credentials", "Login with multiple users")</span>
+                <span class="method-start">269529 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Login using different user credentials", "Login with multiple users")</span>
+                <span class="method-start">346311 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">23543 ms</span>
+                <span class="method-start">421443 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

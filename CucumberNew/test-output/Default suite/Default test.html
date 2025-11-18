@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Nov 07 17:38:02 IST 2025</td>
+<td>Started on:</td><td>Fri Nov 14 17:01:51 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>23 seconds (23614 ms)</td>
+<tr><td>Total time:</td><td>421 seconds (421608 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,67 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestRunner.testrunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.testrunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login using different user credentials", "Login with multiple users"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //*[normalize-space(text())=&apos;Sign In&apos;] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.135, chrome: {chromedriverVersion: 142.0.7444.162 (c076baf266c..., userDataDir: C:\Users\IFOCUS\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55982}, goog:processID: 20260, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55982/devtoo..., se:cdpVersion: 142.0.7444.135, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 327b58c237f20d6dfbba9120f2f16bac
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at Steps.multiloginsteps.click_on_signin(multiloginsteps.java:31)
+	at ✽.User clicks login &quot;Sign In&quot; button(file:///C:/Users/IFOCUS/gitrepo/CucumberNew/src/test/resources/Features/multilogins.feature:6)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1644529474", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1644529474'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //*[normalize-space(text())=&apos;Sign In&apos;] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.135, chrome: {chromedriverVersion: 142.0.7444.162 (c076baf266c..., userDataDir: C:\Users\IFOCUS\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55982}, goog:processID: 20260, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55982/devtoo..., se:cdpVersion: 142.0.7444.135, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 327b58c237f20d6dfbba9120f2f16bac
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at Steps.multiloginsteps.click_on_signin(multiloginsteps.java:31)
+	at ✽.User clicks login &quot;Sign In&quot; button(file:///C:/Users/IFOCUS/gitrepo/CucumberNew/src/test/resources/Features/multilogins.feature:6)
+</pre></div></td>
+<td>75</td>
+<td>TestRunner.testrunner@4722ef0c</td></tr>
+<tr>
+<td title='TestRunner.testrunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.testrunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login using different user credentials", "Login with multiple users"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //*[normalize-space(text())=&apos;Sign In&apos;] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.135, chrome: {chromedriverVersion: 142.0.7444.162 (c076baf266c..., userDataDir: C:\Users\IFOCUS\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55063}, goog:processID: 16320, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55063/devtoo..., se:cdpVersion: 142.0.7444.135, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3a17cba960cad4785cf2aa8fc910d6d5
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at Steps.multiloginsteps.click_on_signin(multiloginsteps.java:31)
+	at ✽.User clicks login &quot;Sign In&quot; button(file:///C:/Users/IFOCUS/gitrepo/CucumberNew/src/test/resources/Features/multilogins.feature:6)
+</pre></div><a href='#' onClick='toggleBox("stack-trace150835665", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace150835665'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //*[normalize-space(text())=&apos;Sign In&apos;] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.135, chrome: {chromedriverVersion: 142.0.7444.162 (c076baf266c..., userDataDir: C:\Users\IFOCUS\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55063}, goog:processID: 16320, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55063/devtoo..., se:cdpVersion: 142.0.7444.135, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3a17cba960cad4785cf2aa8fc910d6d5
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at Steps.multiloginsteps.click_on_signin(multiloginsteps.java:31)
+	at ✽.User clicks login &quot;Sign In&quot; button(file:///C:/Users/IFOCUS/gitrepo/CucumberNew/src/test/resources/Features/multilogins.feature:6)
+</pre></div></td>
+<td>117</td>
+<td>TestRunner.testrunner@4722ef0c</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,9 +137,19 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='TestRunner.testrunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.testrunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Successful New Account Creation and Profile Setup", "User Signup Flow on MeConnect"</td>
+<td title='TestRunner.testrunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.testrunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login using different user credentials", "Login with multiple users"</td>
 <td></td>
-<td>22</td>
+<td>63</td>
+<td>TestRunner.testrunner@4722ef0c</td></tr>
+<tr>
+<td title='TestRunner.testrunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.testrunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login using different user credentials", "Login with multiple users"</td>
+<td></td>
+<td>86</td>
+<td>TestRunner.testrunner@4722ef0c</td></tr>
+<tr>
+<td title='TestRunner.testrunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.testrunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login using different user credentials", "Login with multiple users"</td>
+<td></td>
+<td>76</td>
 <td>TestRunner.testrunner@4722ef0c</td></tr>
 </table><p>
 </body>

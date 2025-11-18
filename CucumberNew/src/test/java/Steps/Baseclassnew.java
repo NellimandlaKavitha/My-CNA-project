@@ -13,12 +13,9 @@ public class Baseclassnew {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://www.channelnewsasia.com/international");
-      
-
     }
 
     public static WebDriver getDriver() {
         return driver;
     }
 }
-
