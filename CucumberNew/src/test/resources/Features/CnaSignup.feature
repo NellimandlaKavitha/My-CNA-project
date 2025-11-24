@@ -12,7 +12,7 @@ Feature: User Signup Flow on MeConnect
     And User clicks on "Create New Account" link
     Then User is on the "Create your MeConnect account" page
     # Account Creation Steps
-    When User enters email "testuserr4@example.com"
+    When User enters email "testuserr4sd@example.com"
     And User enters new password "Password123!" and confirms it
     And User agrees to the terms and conditions
     And User clicks on the "Next" button

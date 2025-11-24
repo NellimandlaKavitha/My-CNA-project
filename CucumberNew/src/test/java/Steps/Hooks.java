@@ -1,7 +1,10 @@
 package Steps;
 
-import io.cucumber.java.Before;
 import io.cucumber.java.After;
+import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
+
+import utils.ScreenshotUtil;
 
 public class Hooks {
 
@@ -11,7 +14,21 @@ public class Hooks {
     }
 
     @After
-    public void tearDown() {
+    public void tearDown(Scenario scenario) {
+
+        
+        if (scenario.isFailed()) {
+            System.out.println("Scenario failed: Taking screenshot...");
+
+            try {
+                ScreenshotUtil.takeScreenshot(Baseclassnew.getDriver(),
+                        scenario.getName().replace(" ", "_"));
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+
+ 
         if (Baseclassnew.getDriver() != null) {
             Baseclassnew.getDriver().quit();
         }

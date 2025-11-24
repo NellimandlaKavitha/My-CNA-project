@@ -8,6 +8,6 @@ import io.cucumber.testng.CucumberOptions;
     glue = {"Steps"},
     plugin = {"pretty", "html:target/cucumber-report.html"},  
     monochrome = true,
-    tags = "@Multilogin"
+    tags = "@cnaMultilogin"
 )
 public class testrunner extends AbstractTestNGCucumberTests {}

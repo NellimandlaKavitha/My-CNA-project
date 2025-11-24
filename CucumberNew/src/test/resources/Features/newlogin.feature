@@ -1,3 +1,4 @@
+@newlogin
 Feature: Testing login feature
 
   Scenario Outline: testing login page

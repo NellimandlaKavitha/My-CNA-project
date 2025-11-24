@@ -1,4 +1,4 @@
-@Multilogin
+@cnaMultilogin
 Feature: Login with multiple users
 
   Scenario Outline: Login using different user credentials

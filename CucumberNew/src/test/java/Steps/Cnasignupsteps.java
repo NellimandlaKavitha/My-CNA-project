@@ -10,6 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.asserts.SoftAssert;
 
 import io.cucumber.java.en.*;
+import utils.ScreenshotUtil;
 
 public class Cnasignupsteps extends Baseclassnew {
     SoftAssert softassert = new SoftAssert();
@@ -159,7 +160,7 @@ public class Cnasignupsteps extends Baseclassnew {
 
         try {
             List<WebElement> iframes = driver.findElements(By.tagName("iframe"));
-            System.out.println("🪟 Total iframes found: " + iframes.size());
+            System.out.println("Total iframes found: " + iframes.size());
 
             if (!iframes.isEmpty()) {
                 driver.switchTo().frame(iframes.get(0));
@@ -168,15 +169,15 @@ public class Cnasignupsteps extends Baseclassnew {
                 System.out.println("No iframe found — staying on main page");
             }
 
-            // Wait for any 'Continue' button that is visible
+          
             WebElement button = wait.until(ExpectedConditions.presenceOfElementLocated(
                     By.xpath("//button[.//span[normalize-space(text())='" + buttonText + "']]")));
 
-            // Scroll into view (sometimes it's below fold)
+            
             js.executeScript("arguments[0].scrollIntoView(true);", button);
-            Thread.sleep(1000); // brief pause
+            Thread.sleep(1000); 
 
-            // Try clicking via JavaScript (safer for hidden or overlayed elements)
+            
             js.executeScript("arguments[0].click();", button);
             System.out.println("Clicked on final button via JS: " + buttonText);
 
@@ -199,5 +200,6 @@ public class Cnasignupsteps extends Baseclassnew {
             "Expected to land on main site, but found: " + actualTitle);
 
         softAssert.assertAll();
+        
     }
 }

@@ -1,7 +1,6 @@
 package Steps;
 
 import java.time.Duration;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebElement;
@@ -11,8 +10,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import io.cucumber.java.en.*;
 import utils.PropertyReader;
 
-public class multiloginsteps extends Baseclassnew {
-
+public class cnamultiloginsteps extends Baseclassnew {
+	 
 	
 	@Given("I open the application")
     public void i_open_the_application() {

@@ -6,6 +6,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.asserts.SoftAssert;
 import io.cucumber.java.en.*;
+import utils.ScreenshotUtil;
 
 public class newloginsteps extends Baseclassnew {
 
@@ -48,5 +49,7 @@ public class newloginsteps extends Baseclassnew {
         boolean status = driver.getPageSource().contains("Logged In Successfully");
         softassert.assertTrue(status, "Login failed");
         softassert.assertAll();
+        ScreenshotUtil.takeScreenshot(driver, "HomePage");
+        
     }
 }
