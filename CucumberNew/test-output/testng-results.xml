@@ -1,148 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-24T10:58:51 IST" name="Default suite" finished-at="2025-11-24T11:07:32 IST" duration-ms="520981">
+  <suite started-at="2026-01-01T13:09:51 IST" name="Default suite" finished-at="2026-01-01T13:10:32 IST" duration-ms="41255">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.testrunner@4722ef0c]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-11-24T10:58:51 IST" name="Default test" finished-at="2025-11-24T11:07:32 IST" duration-ms="520981">
+    <test started-at="2026-01-01T13:09:51 IST" name="Default test" finished-at="2026-01-01T13:10:32 IST" duration-ms="41255">
       <class name="TestRunner.testrunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:TestRunner.testrunner@4722ef0c]" started-at="2025-11-24T10:58:51 IST" name="setUpClass" finished-at="2025-11-24T10:58:54 IST" duration-ms="3224" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:TestRunner.testrunner@4722ef0c]" started-at="2026-01-01T13:09:51 IST" name="setUpClass" finished-at="2026-01-01T13:09:54 IST" duration-ms="2516" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@9785903]]>
+                <![CDATA[org.testng.TestRunner@9e54c59]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.testrunner@4722ef0c]" started-at="2025-11-24T10:58:54 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-24T11:00:15 IST" duration-ms="80405" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.testrunner@4722ef0c]" started-at="2026-01-01T13:09:54 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-01-01T13:10:32 IST" duration-ms="38463" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Login using different user credentials"]]>
+                <![CDATA["Successful New Account Creation and Profile Setup"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Login with multiple users"]]>
+                <![CDATA["User Signup Flow on MeConnect"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.testrunner@4722ef0c]" started-at="2025-11-24T11:00:15 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-24T11:01:35 IST" duration-ms="80581" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Login using different user credentials"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login with multiple users"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.testrunner@4722ef0c]" started-at="2025-11-24T11:01:35 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-24T11:03:00 IST" duration-ms="85019" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Login using different user credentials"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login with multiple users"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.testrunner@4722ef0c]" started-at="2025-11-24T11:03:00 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-24T11:05:36 IST" duration-ms="155630" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Login using different user credentials"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login with multiple users"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <span class="inline-menu__link-text">...</span> is not clickable at point (925, 43). Other element would receive the click: <iframe id="google_ads_iframe_/4654/cna_dweb/oop/international/landingpage/na_0" name="google_ads_iframe_/4654/cna_dweb/oop/international/landingpage/na_0" title="3rd party ad content" width="1" height="1" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" aria-label="Advertisement" tabindex="0" allow="private-state-token-redemption;attribution-reporting" data-load-complete="true" data-google-container-id="2" style="border: 0px; vertical-align: bottom; height: 100%; width: 100%; display: block; position: fixed; top: 0px; left: 0px; z-index: 9999999;" data-gtm-yt-inspected-39551834_238="true" data-gtm-yt-inspected-14="true"></iframe>
-  (Session info: chrome=142.0.7444.176)
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [40bdb3d16a4fdb2fd37c0775a15da545, clickElement {id=f.ABCC60D0A742D050763B570366B0D0C2.d.B3A95908805DBEFC5B9957B1973290F9.e.38}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\IFOCUS\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60844}, goog:processID: 5984, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60844/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (40bdb3d16a4fdb2fd37c0775a15da545)] -> xpath: //*[normalize-space(text())='Sign In']]
-Session ID: 40bdb3d16a4fdb2fd37c0775a15da545]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="inline-menu__link-text">...</span> is not clickable at point (925, 43). Other element would receive the click: <iframe id="google_ads_iframe_/4654/cna_dweb/oop/international/landingpage/na_0" name="google_ads_iframe_/4654/cna_dweb/oop/international/landingpage/na_0" title="3rd party ad content" width="1" height="1" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" aria-label="Advertisement" tabindex="0" allow="private-state-token-redemption;attribution-reporting" data-load-complete="true" data-google-container-id="2" style="border: 0px; vertical-align: bottom; height: 100%; width: 100%; display: block; position: fixed; top: 0px; left: 0px; z-index: 9999999;" data-gtm-yt-inspected-39551834_238="true" data-gtm-yt-inspected-14="true"></iframe>
-  (Session info: chrome=142.0.7444.176)
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [40bdb3d16a4fdb2fd37c0775a15da545, clickElement {id=f.ABCC60D0A742D050763B570366B0D0C2.d.B3A95908805DBEFC5B9957B1973290F9.e.38}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\IFOCUS\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60844}, goog:processID: 5984, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60844/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (40bdb3d16a4fdb2fd37c0775a15da545)] -> xpath: //*[normalize-space(text())='Sign In']]
-Session ID: 40bdb3d16a4fdb2fd37c0775a15da545
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at Steps.cnamultiloginsteps.click_on_signin(cnamultiloginsteps.java:31)
-at ✽.User clicks login "Sign In" button(file:///C:/Users/IFOCUS/gitrepo/CucumberNew/src/test/resources/Features/cnamultilogins.feature:6)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.testrunner@4722ef0c]" started-at="2025-11-24T11:05:36 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-24T11:07:32 IST" duration-ms="115695" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Login using different user credentials"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login with multiple users"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner.testrunner@4722ef0c]" started-at="2025-11-24T11:07:32 IST" name="tearDownClass" finished-at="2025-11-24T11:07:32 IST" duration-ms="88" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner.testrunner@4722ef0c]" started-at="2026-01-01T13:10:32 IST" name="tearDownClass" finished-at="2026-01-01T13:10:32 IST" duration-ms="94" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

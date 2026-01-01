@@ -10,10 +10,24 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.asserts.SoftAssert;
 
 import io.cucumber.java.en.*;
-import utils.ScreenshotUtil;
+import utils.PropertyReader;
 
 public class Cnasignupsteps extends Baseclassnew {
+	
+	private static final String SIGNUP_PROP="src/test/resources/credentials/signup.properties";
+	
+	
     SoftAssert softassert = new SoftAssert();
+    private boolean isEmailAlreadyUsed() {
+        try {
+            return driver.findElement(
+                By.xpath("//*[contains(text(),'already exists')]")
+            ).isDisplayed();
+        } catch (NoSuchElementException e) {
+            return false;
+        }
+    }
+
 
     @Given("Launch the URL")
     public void launch_the_url() {
@@ -75,16 +89,40 @@ public class Cnasignupsteps extends Baseclassnew {
         System.out.println("Landed on page: " + expectedPageName);
     }
 
-    @When("User enters email {string}")
-    public void user_enters_email(String email) {
-        driver.findElement(By.id("email")).sendKeys(email.trim());
+    @When("User enters email")
+    public void user_enters_email() {
+
+        int index = Integer.parseInt(
+            PropertyReader.getProperty(SIGNUP_PROP, "signup.email.index")
+        );
+
+        String emailKey = "signup.email" + index;
+        String email = PropertyReader.getProperty(SIGNUP_PROP, emailKey);
+
+        if (email == null || email.trim().isEmpty()) {
+
+            throw new RuntimeException(
+                "❌ Email not found in properties for key: " + emailKey +
+                ". Please add it or reset signup.email.index"
+            );
+        }
+
+        driver.findElement(By.id("email")).clear();
+        driver.findElement(By.id("email")).sendKeys(email);
+
+        System.out.println(" Using signup email: " + email);
     }
 
-    @When("User enters new password {string} and confirms it")
-    public void user_enters_new_password_and_confirms_it(String password) {
+    @When("User enters new password")
+    public void user_enters_new_password() {
+
+        String password = PropertyReader.getProperty(
+            SIGNUP_PROP, "signup.password");
+
         driver.findElement(By.id("password")).sendKeys(password);
         driver.findElement(By.id("mc-confirm-password")).sendKeys(password);
     }
+
 
     @When("User agrees to the terms and conditions")
     public void user_agrees_to_the_terms_and_conditions() {
@@ -93,11 +131,30 @@ public class Cnasignupsteps extends Baseclassnew {
 
     @When("User clicks on the {string} button")
     public void user_clicks_on_the_button(String buttonText) {
+
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+
         WebElement nextBtn = wait.until(ExpectedConditions.elementToBeClickable(
-                By.xpath("(//button[normalize-space(text())='" + buttonText + "'])[2]")));
+            By.xpath("(//button[normalize-space(text())='" + buttonText + "'])[2]")
+        ));
         nextBtn.click();
-        System.out.println("Clicked on '" + buttonText + "' button");
+
+        if (isEmailAlreadyUsed()) {
+
+            int index = Integer.parseInt(
+                PropertyReader.getProperty(SIGNUP_PROP, "signup.email.index")
+            );
+
+            index++;
+            PropertyReader.setProperty(
+                SIGNUP_PROP, "signup.email.index", String.valueOf(index)
+            );
+
+            System.out.println("Email already used. Switching to email index: " + index);
+
+            user_enters_email();
+            nextBtn.click();
+        }
     }
 
     @Then("User is navigated to the {string} page")
@@ -107,43 +164,56 @@ public class Cnasignupsteps extends Baseclassnew {
 
     @When("User enters personal details:")
     public void user_enters_personal_details(io.cucumber.datatable.DataTable dataTable) {
+
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
         List<Map<String, String>> details = dataTable.asMaps(String.class, String.class);
 
         for (Map<String, String> row : details) {
+
             String field = row.get("Field");
-            String value = row.get("Value");
+            String value = null;
 
             switch (field) {
+
                 case "First Name":
-                    WebElement firstName = wait.until(ExpectedConditions.visibilityOfElementLocated(
-                            By.xpath("//label[contains(text(),'First Name')]/following::input[1]")));
+                    value = PropertyReader.getProperty(
+                            SIGNUP_PROP, "signup.firstName");
+
+                    WebElement firstName = wait.until(
+                            ExpectedConditions.visibilityOfElementLocated(
+                                    By.xpath("//label[contains(text(),'First Name')]/following::input[1]")
+                            ));
                     firstName.sendKeys(value);
                     break;
 
                 case "Last Name":
-                    WebElement lastName = wait.until(ExpectedConditions.visibilityOfElementLocated(
-                            By.xpath("//label[contains(text(),'Last Name')]/following::input[1]")));
+                    value = PropertyReader.getProperty(
+                            SIGNUP_PROP, "signup.lastName");
+
+                    WebElement lastName = wait.until(
+                            ExpectedConditions.visibilityOfElementLocated(
+                                    By.xpath("//label[contains(text(),'Last Name')]/following::input[1]")
+                            ));
                     lastName.sendKeys(value);
                     break;
 
                 case "Date of Birth":
-                    WebElement dob = wait.until(ExpectedConditions.visibilityOfElementLocated(
-                            By.xpath("//label[contains(text(),'Date of Birth')]/following::input[1]")));
+                    value = PropertyReader.getProperty(
+                            SIGNUP_PROP, "signup.dob");
+
+                    WebElement dob = wait.until(
+                            ExpectedConditions.visibilityOfElementLocated(
+                                    By.xpath("//label[contains(text(),'Date of Birth')]/following::input[1]")
+                            ));
                     dob.sendKeys(value);
                     break;
-
-//                case "Gender":
-//                    WebElement gender = wait.until(ExpectedConditions.visibilityOfElementLocated(
-//                            By.xpath("//label[contains(text(),'Gender')]/following::select[1]")));
-//                    gender.sendKeys(value);
-//                    break;
 
                 default:
                     System.out.println("Unknown field: " + field);
             }
         }
     }
+
     @When("User clicks on the {string} button on the profile setup page")
     public void user_clicks_on_the_button_on_the_profile_setup_page(String buttonText) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));

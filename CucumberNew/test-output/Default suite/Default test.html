@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Nov 24 10:58:51 IST 2025</td>
+<td>Started on:</td><td>Thu Jan 01 13:09:51 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>520 seconds (520981 ms)</td>
+<tr><td>Total time:</td><td>41 seconds (41255 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,71 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='TestRunner.testrunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.testrunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login using different user credentials", "Login with multiple users"</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;inline-menu__link-text&quot;&gt;...&lt;/span&gt; is not clickable at point (925, 43). Other element would receive the click: &lt;iframe id=&quot;google_ads_iframe_/4654/cna_dweb/oop/international/landingpage/na_0&quot; name=&quot;google_ads_iframe_/4654/cna_dweb/oop/international/landingpage/na_0&quot; title=&quot;3rd party ad content&quot; width=&quot;1&quot; height=&quot;1&quot; scrolling=&quot;no&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; frameborder=&quot;0&quot; aria-label=&quot;Advertisement&quot; tabindex=&quot;0&quot; allow=&quot;private-state-token-redemption;attribution-reporting&quot; data-load-complete=&quot;true&quot; data-google-container-id=&quot;2&quot; style=&quot;border: 0px; vertical-align: bottom; height: 100%; width: 100%; display: block; position: fixed; top: 0px; left: 0px; z-index: 9999999;&quot; data-gtm-yt-inspected-39551834_238=&quot;true&quot; data-gtm-yt-inspected-14=&quot;true&quot;&gt;&lt;/iframe&gt;
-  (Session info: chrome=142.0.7444.176)
-Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [40bdb3d16a4fdb2fd37c0775a15da545, clickElement {id=f.ABCC60D0A742D050763B570366B0D0C2.d.B3A95908805DBEFC5B9957B1973290F9.e.38}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\IFOCUS\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60844}, goog:processID: 5984, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60844/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (40bdb3d16a4fdb2fd37c0775a15da545)] -&gt; xpath: //*[normalize-space(text())=&apos;Sign In&apos;]]
-Session ID: 40bdb3d16a4fdb2fd37c0775a15da545
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at Steps.cnamultiloginsteps.click_on_signin(cnamultiloginsteps.java:31)
-	at ✽.User clicks login &quot;Sign In&quot; button(file:///C:/Users/IFOCUS/gitrepo/CucumberNew/src/test/resources/Features/cnamultilogins.feature:6)
-</pre></div><a href='#' onClick='toggleBox("stack-trace113042195", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace113042195'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;inline-menu__link-text&quot;&gt;...&lt;/span&gt; is not clickable at point (925, 43). Other element would receive the click: &lt;iframe id=&quot;google_ads_iframe_/4654/cna_dweb/oop/international/landingpage/na_0&quot; name=&quot;google_ads_iframe_/4654/cna_dweb/oop/international/landingpage/na_0&quot; title=&quot;3rd party ad content&quot; width=&quot;1&quot; height=&quot;1&quot; scrolling=&quot;no&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; frameborder=&quot;0&quot; aria-label=&quot;Advertisement&quot; tabindex=&quot;0&quot; allow=&quot;private-state-token-redemption;attribution-reporting&quot; data-load-complete=&quot;true&quot; data-google-container-id=&quot;2&quot; style=&quot;border: 0px; vertical-align: bottom; height: 100%; width: 100%; display: block; position: fixed; top: 0px; left: 0px; z-index: 9999999;&quot; data-gtm-yt-inspected-39551834_238=&quot;true&quot; data-gtm-yt-inspected-14=&quot;true&quot;&gt;&lt;/iframe&gt;
-  (Session info: chrome=142.0.7444.176)
-Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [40bdb3d16a4fdb2fd37c0775a15da545, clickElement {id=f.ABCC60D0A742D050763B570366B0D0C2.d.B3A95908805DBEFC5B9957B1973290F9.e.38}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\IFOCUS\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60844}, goog:processID: 5984, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60844/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (40bdb3d16a4fdb2fd37c0775a15da545)] -&gt; xpath: //*[normalize-space(text())=&apos;Sign In&apos;]]
-Session ID: 40bdb3d16a4fdb2fd37c0775a15da545
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at Steps.cnamultiloginsteps.click_on_signin(cnamultiloginsteps.java:31)
-	at ✽.User clicks login &quot;Sign In&quot; button(file:///C:/Users/IFOCUS/gitrepo/CucumberNew/src/test/resources/Features/cnamultilogins.feature:6)
-</pre></div></td>
-<td>155</td>
-<td>TestRunner.testrunner@4722ef0c</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -141,24 +76,9 @@ Session ID: 40bdb3d16a4fdb2fd37c0775a15da545
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='TestRunner.testrunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.testrunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login using different user credentials", "Login with multiple users"</td>
+<td title='TestRunner.testrunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.testrunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Successful New Account Creation and Profile Setup", "User Signup Flow on MeConnect"</td>
 <td></td>
-<td>85</td>
-<td>TestRunner.testrunner@4722ef0c</td></tr>
-<tr>
-<td title='TestRunner.testrunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.testrunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login using different user credentials", "Login with multiple users"</td>
-<td></td>
-<td>80</td>
-<td>TestRunner.testrunner@4722ef0c</td></tr>
-<tr>
-<td title='TestRunner.testrunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.testrunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login using different user credentials", "Login with multiple users"</td>
-<td></td>
-<td>115</td>
-<td>TestRunner.testrunner@4722ef0c</td></tr>
-<tr>
-<td title='TestRunner.testrunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner.testrunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login using different user credentials", "Login with multiple users"</td>
-<td></td>
-<td>80</td>
+<td>38</td>
 <td>TestRunner.testrunner@4722ef0c</td></tr>
 </table><p>
 </body>
